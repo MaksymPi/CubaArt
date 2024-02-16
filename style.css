@@ -45,6 +45,8 @@ body {
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 /* ---------------------------------------------------------------------------- */
 .container {
@@ -60,7 +62,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     text-align: center;
-    flex-grow: 1;
+    flex-grow: 0.5;
 	background-color: rgb(255, 255, 255);
 }
 
@@ -69,7 +71,7 @@ body {
     flex-direction: column;
     text-align: center;
     background-color: rgb(92, 175, 95);
-    flex-grow: 3;
+    flex-grow: 5;
 }
 
 .header {

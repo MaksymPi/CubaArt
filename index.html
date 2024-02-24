@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="components/HomePage/HomePage.css">
     <title>Cuba Sztuka</title>
 </head>
 
@@ -24,64 +25,49 @@
             </div>
             <nav class="nav-list">
                 <ul>
-                    <li class="lng-aboutMeLang"><a href="#">O mnie</a></li>
-                    <li class="lng-myArt"><a href="#">Sztuka</a></li>
-                    <li class="lng-exampleWorks"><a href="#">Moje prace</a></li>
+                    <li ><a class="lng-aboutMeLang" href="/components/AboutMe/AboutMe.html">O mnie</a></li>
+                    <li ><a class="lng-myArt" href="/components/Art/Art.html">Sztuka</a></li>
+                    <li ><a class="lng-exampleWorks" href="/components/MyProject/MyProject.html">Moje prace</a></li>
 
                 </ul>
             </nav>
         </header>
-        <section class="section__gallery ">
-            <div class="gallery">
-                <div class="gallery__list">
-                    <div class="gallery__item">
-                        <img src="img/1.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/2.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/3.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/4.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/5.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/6.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/7.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/8.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/9.jpg" alt="">
-                    </div>
-                    <div class="gallery__item">
-                        <img src="img/10.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="content-container">
+
+        </div>
         <footer class="footer">
-            <div class="contact-links">
+            <!-- <div class="contact-links">
                 <a href="mailto:jakubjagodaart@gmail.com" target="_blank" class="social-link"><img src="img/icon/mail.svg" alt="Instagram">jakubjagodaart@gmail.com</a>
                 <a href="tel:+48577726851" target="_blank" class="social-link"><img src="img/icon/phone.svg" alt="Instagram">+48577726851</a>
-            </div>
+            </div> -->
             <div class="social-links">
-                <a href="https://www.instagram.com/" target="_blank" class="social-link"><img src="img/icon/instagram.svg" alt="Instagram">Instagram</a>
-                <a href="https://www.linkedin.com/in/jakub-jagoda-2075a9260/" target="_blank" class="social-link"><img src="img/icon/linkedin.svg" alt="LinkedIn">LinkedIn</a>
-                <a href="https://jakubjagoda.artstation.com/" target="_blank" class="social-link"><img src="img/icon/artstation.svg" alt="ArtStation">ArtStation</a>
+                <a href="mailto:jakubjagodaart@gmail.com" target="_blank" class="social-link"><img src="img/icon/mail.svg" alt="Instagram"></a>
+                <a href="tel:+48577726851" target="_blank" class="social-link"><img src="img/icon/phone.svg" alt="Instagram"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-link"><img src="img/icon/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/jakub-jagoda-2075a9260/" target="_blank" class="social-link"><img src="img/icon/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://jakubjagoda.artstation.com/" target="_blank" class="social-link"><img src="img/icon/artstation.svg" alt="ArtStation"></a>
             </div>
         </footer>
     </div>
+    <script>
+        window.onload = function() {
+            loadHomePage();
+        };
 
-    </div>
-    </div>
+        async function loadHomePage() {
+            try {
+                const response = await fetch('/components/HomePage/HomePage.html');
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки HomePage.html');
+                }
+                const html = await response.text();
+                document.querySelector('.content-container').innerHTML = html;
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+    <script src="index.js"></script>
     <script type="module" src="lang.js"></script>
     <script type="module" src="app.js"></script>
 

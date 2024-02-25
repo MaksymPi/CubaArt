@@ -18,5 +18,10 @@ export const langArr = {
         "pl": "Moje projekty",
         "en": "My Projects",
         "ua": "Мої Проекти",
-    }
+    },
+    "homePage":{
+        "pl": "Strona główna",
+        "en": "Home",
+        "ua": "Домашня сторінка",
+    },
 }

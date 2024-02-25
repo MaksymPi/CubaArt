@@ -9,7 +9,6 @@ btnLangs.forEach(btnLang => {
 
 function changeLanguage(event) {
     let lang = event.target.value;
-    console.log(lang);
     updateTextContent(lang);
 }
 
@@ -23,16 +22,8 @@ function updateTextContent(lang) {
     }
 }
 
-// Инициализация при загрузке страницы
 document.addEventListener("DOMContentLoaded", function(event) {
-    let lang = window.location.hash.substr(1);
-    if (!allLang.includes(lang)) {
-        lang = 'pl';
-    }
+    let checkedBtn = document.querySelector('.btn-language:checked');
+    let lang = checkedBtn ? checkedBtn.value : 'pl';
     updateTextContent(lang);
-    btnLangs.forEach(btnLang => {
-        if (btnLang.value === lang) {
-            btnLang.checked = true;
-        }
-    });
 });

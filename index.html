@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/HomePage/HomePage.css">
     <title>Cuba Sztuka</title>
 </head>
 
@@ -25,16 +23,15 @@
             </div>
             <nav class="nav-list">
                 <ul>
-                    <li ><a class="lng-aboutMeLang" href="/components/AboutMe/AboutMe.html">O mnie</a></li>
-                    <li ><a class="lng-myArt" href="/components/Art/Art.html">Sztuka</a></li>
-                    <li ><a class="lng-exampleWorks" href="/components/MyProject/MyProject.html">Moje prace</a></li>
+                    <li ><a class="lng-homePage" onclick="route()" href="/">Strona główna</a></li>
+                    <li ><a class="lng-aboutMeLang" onclick="route()" href="/about">O mnie</a></li>
+                    <li ><a class="lng-myArt" onclick="route()" href="/art">Sztuka</a></li>
+                    <li ><a class="lng-exampleWorks" onclick="route()" href="/project">Moje prace</a></li>
 
                 </ul>
             </nav>
         </header>
-        <div class="content-container">
-
-        </div>
+        <div class="content-container"></div>
         <footer class="footer">
             <!-- <div class="contact-links">
                 <a href="mailto:jakubjagodaart@gmail.com" target="_blank" class="social-link"><img src="img/icon/mail.svg" alt="Instagram">jakubjagodaart@gmail.com</a>
@@ -49,27 +46,9 @@
             </div>
         </footer>
     </div>
-    <script>
-        window.onload = function() {
-            loadHomePage();
-        };
-
-        async function loadHomePage() {
-            try {
-                const response = await fetch('/components/HomePage/HomePage.html');
-                if (!response.ok) {
-                    throw new Error('Ошибка загрузки HomePage.html');
-                }
-                const html = await response.text();
-                document.querySelector('.content-container').innerHTML = html;
-            } catch (error) {
-                console.error(error);
-            }
-        }
-    </script>
-    <script src="index.js"></script>
-    <script type="module" src="lang.js"></script>
-    <script type="module" src="app.js"></script>
+    <script src="routes/route.js"></script>
+    <script type="module" src="leng/lang.js"></script>
+    <script type="module" src="leng/app.js"></script>
 
 </body>
 

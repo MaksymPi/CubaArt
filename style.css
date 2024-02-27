@@ -12,6 +12,18 @@
 @import url('components/MyProject/MyProject.css');
 
 
+@font-face {
+    font-family: 'Colonna';
+    src: url('fonts/ColonnaMT.eot');
+    src: url('fonts/ColonnaMT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ColonnaMT.woff2') format('woff2'),
+        url('fonts/ColonnaMT.woff') format('woff'),
+        url('fonts/ColonnaMT.ttf') format('truetype'),
+        url('fonts/ColonnaMT.svg#ColonnaMT') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
 
 /* Обнуление */
 *,
@@ -52,9 +64,10 @@ body {
 	height: 100%;
 	line-height: 1;
 	font-size: 28px;
-	color: #060606;
+	color: #ffffff;
 	font-weight: 700;
 	font-family: "Cabin", sans-serif;
+	background-color: #000000;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -74,14 +87,9 @@ body {
 	box-sizing: border-box;
 }
 .content-container{
-	height: 100vh;
+	margin-left: 275px;
+	min-height: 100vh;
 	width: calc(100vw - 275px);
-	top: 0px;
-}
-.content {
-	position: absolute;
-    top: 0px;
-    left: 310px;
 }
 
 .header {
@@ -90,8 +98,9 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	position: fixed;
-	top: 15px;
-	left: 15px;
+	padding: 15px;
+	top: 0;
+	left: 0;
 }
 
 .logo__container {
@@ -100,9 +109,21 @@ body {
 	margin-bottom: 150px;
 }
 
-.logo img {
-	height: 80px;
-	border-radius: 20px;
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo p {
+	font-family: 'Colonna';
+	font-size: 42px;
+}
+
+.button-language {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 .btn-language {
@@ -134,7 +155,7 @@ body {
 }
 
 .nav-list ul li a {
-	color: #060606;
+	color: #ffffff;
 	font-size: 32px;
 	font-weight: 700;
 }
@@ -194,6 +215,11 @@ body {
 	body {
 		font-weight: 400;
 	}
+	.content-container{
+		margin-left: 0px;
+		min-height: 100vh;
+		width: 100%;
+	}
 	
 	.gallery__item {
 		flex: 0 1 100%;
@@ -238,9 +264,20 @@ body {
 		gap: 20px;
 	}
 
+	.nav-list ul li  {
+		padding-bottom: 0px;
+	}
+
+
 	.nav-list ul li a {
 		color: #ffffff;
 		font-size: 20px;
+	}
+
+	.content {
+		position: relative;
+		top: 0px;
+		left: 0px;
 	}
 
 

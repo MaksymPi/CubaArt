@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Colonna MT';
+    src: url('ColonnaMT.eot');
+    src: url('ColonnaMT.eot?#iefix') format('embedded-opentype'),
+        url('ColonnaMT.woff2') format('woff2'),
+        url('ColonnaMT.woff') format('woff'),
+        url('ColonnaMT.ttf') format('truetype'),
+        url('ColonnaMT.svg#ColonnaMT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

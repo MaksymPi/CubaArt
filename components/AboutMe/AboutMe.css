@@ -1,3 +1,130 @@
 .about__container {
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+}
+.bottom__img__container {
+    height: 250px;
+    width: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.bottom__img__container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.info__container {
+    margin: 10vh 2vw 0 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+.h2::after {
+    content: "────────────⊱༺ ༓ ༻⊰────────────";
+    text-align: center;
+  }
+
+.img_portret__container {
+    height: 700px;
+    width: 600px;
+    overflow: auto; 
+	box-sizing: border-box;
+}
+
+.img_portret__container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 50px;
+    width: 600px;
+    overflow: auto;
+}
+.text p{
+    line-height: 45px;
+    text-indent: 45px;
+}
+
+.h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --------------------------------media---------------------- */
+
+@media screen and (max-width:1575px) {
+    .info__container {
+        margin: 10vh 5px 5px 5px;
+        gap: 5px;
+    }
+	.img_portret__container {
+        height: 600px;
+        width: 500px;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+        width: 500px;
+    }
+    .h2::after {
+        content: "───────⊱༺ ༓ ༻⊰───────";
+        text-align: center;
+      }
+
+}
+
+@media screen and (max-width:1375px) {
+    .info__container {
+        flex-direction: column;
+    }
+	.img_portret__container {
+        height: 600px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+        width: 700px;
+    }
+    .h2::after {
+        content: "───────⊱༺ ༓ ༻⊰───────";
+        text-align: center;
+      }
+
+}
+
+@media screen and (max-width:750px) {
+    .img_portret__container {
+        height: 400px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+        width: 300px;
+    }
+    .h2::after {
+        content: "────⊱༺ ༓ ༻⊰────";
+        text-align: center;
+      }
 }

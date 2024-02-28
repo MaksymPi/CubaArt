@@ -8,11 +8,10 @@ const route = (event) => {
 
 const routes = {
     404: '/pages/404.html',
-    '/index.html': 'components/HomePage/HomePage.html',
-    '/': 'components/HomePage/HomePage.html',
+    '/index.html': 'components/ArtPage/Art.html',
+    '/': 'components/ArtPage/Art.html',
     '/about':'components/AboutMe/AboutMe.html',
-    '/art': '/components/Art/Art.html',
-    '/project': '/components/MyProject/MyProject.html',
+    '/contact': '/components/Contact/Contact.html',
 }
 
 const handleLocation = async () => {

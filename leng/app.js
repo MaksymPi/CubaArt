@@ -24,6 +24,6 @@ function updateTextContent(lang) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     let checkedBtn = document.querySelector('.btn-language:checked');
-    let lang = checkedBtn ? checkedBtn.value : 'pl';
+    let lang = checkedBtn ? checkedBtn.value : 'en';
     updateTextContent(lang);
 });

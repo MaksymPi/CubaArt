@@ -31,6 +31,7 @@
     width: 600px;
     overflow: auto; 
 	box-sizing: border-box;
+    box-shadow: inset 0 0 15px #000;
 }
 
 .img_portret__container img{
@@ -131,6 +132,7 @@
         flex-direction: column;
         gap: 50px;
         width: 300px;
+        font-size: 16px;
     }
     .lng-me::after {
         top: 40px;

@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 /*-----------------------------Art--------------------------------- */
 @import url('components/ArtPage/Art.css');
@@ -62,8 +66,8 @@ body {
 	line-height: 1;
 	font-size: 28px;
 	color: #ffffff;
-	font-weight: 700;
-	font-family: "Cabin", sans-serif;
+	font-weight: 500;
+	font-family:  "Cinzel", serif;
 	background-color: #000000;
 }
 
@@ -103,7 +107,7 @@ body {
 .logo__container {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 150px;
+	margin-bottom: 250px;
 }
 
 .logo {
@@ -127,7 +131,7 @@ body {
 .btn-language {
 	padding-right: 10px;
 	color: #090909;
-	padding: 5px 10px;
+	padding: 4px 8px;
 	font-size: 14px;
 	border-radius: 0.5em;
 	background: #ffffff;

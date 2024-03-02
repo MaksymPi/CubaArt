@@ -1,6 +1,7 @@
 .about__container {
     display: flex;
     flex-direction: column;
+align-items: center;
     width: 100%;
     overflow: auto;
 }
@@ -18,12 +19,12 @@
 
 
 .info__container {
-    margin: 10vh 2vw 0 2vw;
+    margin: 10vh 2vw 10vh 2vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 20px;
+    gap: 100px;
 }
 
 .img_portret__container {
@@ -66,14 +67,31 @@
     content: "────────────⊱༺ ༓ ༻⊰────────────";
     text-align: center;
   }
+.clients__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.clients__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.clients__container h2{
+    margin-bottom: 50px;
+}
 
 
 /* --------------------------------media---------------------- */
 
 @media screen and (max-width:1575px) {
     .info__container {
-        margin: 10vh 5px 5px 5px;
-        gap: 5px;
+        margin: 10vh 5px 10vh 5px;
+        gap: 20px;
     }
 	.img_portret__container {
         height: 600px;

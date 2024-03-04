@@ -145,18 +145,18 @@ body {
 	box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
-.nav-list {
+.nav__list {
 	display: flex;
 	text-align: center;
 	justify-content: center;
 }
 
-.nav-list ul li {
+.nav__list ul li {
 	padding-bottom: 40px;
 	cursor: pointer;
 }
 
-.nav-list ul li a {
+.nav__list ul li a {
 	color: #ffffff;
 	font-size: 32px;
 	font-weight: 700;
@@ -185,18 +185,18 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-.social-links {
+.social__links {
     display: flex;
     justify-content: center;
 }
 
-.social-link {
+.social__link {
     margin: 5px 5px;
 	display: flex;
 	align-items: center;
 }
 
-.social-link img {
+.social__link img {
     width: 40px; 
     height: 40px;
 	margin-right: 5px;
@@ -260,18 +260,18 @@ body {
 		opacity: 0.5;
 	}
 
-	.nav-list ul {
+	.nav__list ul {
 		display: flex;
 		align-items: center;
 		gap: 20px;
 	}
 
-	.nav-list ul li  {
+	.nav__list ul li  {
 		padding-bottom: 0px;
 	}
 
 
-	.nav-list ul li a {
+	.nav__list ul li a {
 		color: #ffffff;
 		font-size: 20px;
 	}
@@ -293,7 +293,7 @@ body {
 	.contact-links {
 		flex-direction: row;
 	}
-	.social-links {
+	.social__links {
 		justify-content: space-around;
 	}
 }
@@ -302,11 +302,11 @@ body {
 	.button-language{
 		display: none;
 	}
-	.nav-list ul {
+	.nav__list ul {
 		display: flex;
 		gap: 10px;
 	}
-	.nav-list ul li a {
+	.nav__list ul li a {
 		font-size: 14px;
 		font-weight: 400;
 	}

@@ -1,0 +1,114 @@
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-image: url(/img/contact/bgimg.jpg);
+    background-position: 50% 50%;
+    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h2__contact {
+    font-size: 54px;
+    margin: 100px 0 100px 0;
+    text-transform: uppercase;
+}
+
+.contact__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    margin: 15px;
+    gap: 30px;
+}
+
+.contacts {
+    flex: 1;
+}
+.lng-text__contact {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+.lng-mail img {
+    height: 100px;
+    width: 100px;;
+}
+.lng-mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.lng-h3__contact, .lng-h3__form {
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+
+.contact__form {
+    width: 100%;
+    flex: 1;
+}
+
+/* -----------------form----------------------- */
+
+.contact-form {
+    width: 100%;
+    margin: 15px;
+}
+
+.form__group {
+    
+    text-align: center;
+    border-radius: 0;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.form-control {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.submit-button {
+    width: 200px;
+    height: 50px;
+    background: #020202;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width:992px) {
+	.contact__info {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:750px) {
+    .lng-text__contact {
+        font-size: 16px;
+    }
+    .lng-telegram img, 
+.lng-mail img {
+    height: 50px;
+    width: 50px;;
+}
+}

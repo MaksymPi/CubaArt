@@ -39,4 +39,9 @@ export const langArr = {
         "en": "Contacts us",
         "ua": "Звяжіться з нами",
     },
+    "text__contact":{
+        "pl": "Jeśli potrzebujesz się z nami skontaktować, możemy Ci pomóc. Skontaktuj się z nami za pomocą  poczty",
+        "en": "If you need to contact us, we can help you. Contact us by mail",
+        "ua": "Якщо вам потрібна допомога, зв'яжіться з нами за поштою",
+    },
 }
